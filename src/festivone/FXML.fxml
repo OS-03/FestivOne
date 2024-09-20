@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="festivone.FXMLController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="421.0" prefWidth="777.0">
+         <children>
+            <BorderPane fx:id="login_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="801.0">
+               <left>
+                  <AnchorPane prefHeight="400.0" prefWidth="394.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="405.0" fitWidth="405.0" layoutX="24.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="442.0" prefWidth="423.0" style="-fx-background-color: #F8F1DF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="82.0" fitWidth="103.0" layoutX="44.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@2.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="login_username" layoutX="123.0" layoutY="156.0" prefHeight="28.0" prefWidth="201.0" promptText="Enter Your Username" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="login_showPassword" layoutX="123.0" layoutY="202.0" prefHeight="26.0" prefWidth="201.0" promptText="Enter the Password" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField id="pass.btn" fx:id="login_password" layoutX="122.0" layoutY="201.0" prefHeight="28.0" prefWidth="201.0" promptText="Enter the Password" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Label layoutX="124.0" layoutY="381.0" prefHeight="27.0" prefWidth="232.0" text="Copyright © festivone 2023" textAlignment="CENTER" textFill="#b2a9a9">
+                           <font>
+                              <Font name="EngraversGothic BT" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="153.0" layoutY="85.0" prefHeight="37.0" prefWidth="135.0" text="LOGIN " textFill="#785142">
+                           <font>
+                              <Font name="EngraversGothic BT" size="34.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIcon fill="#785142" glyphName="USER" layoutX="66.0" layoutY="184.0" size="3em" text="" wrappingWidth="34.44999980926514">
+                           <font>
+                              <Font size="47.0" />
+                           </font>
+                        </FontAwesomeIcon>
+                        <FontAwesomeIcon fill="#785142" glyphName="BOOK" layoutX="67.0" layoutY="236.0" size="3em" text="" wrappingWidth="33.35000038146973" />
+                        <Hyperlink fx:id="login_forgotPassword" layoutX="252.0" layoutY="235.0" onAction="#switchForm" prefHeight="21.0" prefWidth="98.0" text="Forgot Password?">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Hyperlink>
+                        <Label layoutX="222.0" layoutY="259.0" prefHeight="17.0" prefWidth="64.0" text="Not a User?">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <JFXCheckBox fx:id="login_selectShowPassword" checkedColor="#785142" layoutX="113.0" layoutY="239.0" onAction="#showPassword" prefHeight="11.0" prefWidth="122.0" text="SHOW PASSWORD" unCheckedColor="#785142" />
+                        <JFXButton fx:id="login_createAccount" layoutX="218.0" layoutY="278.0" onAction="#switchForm" prefHeight="37.0" prefWidth="117.0" styleClass="login-btn" stylesheets="@Style.css" text="SIGNUP" textFill="WHITE">
+                           <font>
+                              <Font name="EngraversGothic BT" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="login_btn" layoutX="84.0" layoutY="279.0" onAction="#login" prefHeight="37.0" prefWidth="117.0" styleClass="login-btn" stylesheets="@Style.css" text="LOGIN" textFill="WHITE">
+                           <font>
+                              <Font name="EngraversGothic BT" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="signup_form" layoutX="6.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="801.0" visible="false">
+               <left>
+                  <AnchorPane prefHeight="400.0" prefWidth="394.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="405.0" fitWidth="405.0" layoutX="20.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <right>
+                  <AnchorPane prefHeight="400.0" prefWidth="420.0" style="-fx-background-color: #F8F1DF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="signup_username" layoutX="99.0" layoutY="98.0" prefHeight="28.0" prefWidth="197.0" promptText="Username" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="signup_password" layoutX="99.0" layoutY="136.0" prefHeight="28.0" prefWidth="197.0" promptText="Password" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Label layoutX="112.0" layoutY="377.0" prefHeight="27.0" prefWidth="232.0" text="Copyright © festivone 2023" textAlignment="CENTER" textFill="#b2a9a9">
+                           <font>
+                              <Font name="EngraversGothic BT" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="17.0" prefHeight="37.0" prefWidth="284.0" text="SIGNUP NEW ACCOUNT" textFill="#663707">
+                           <font>
+                              <Font name="EngraversGothic BT" size="28.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="97.0" fitWidth="99.0" layoutX="1.0" layoutY="-16.0">
+                           <image>
+                              <Image url="@3.png" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="signup_cPassword" layoutX="100.0" layoutY="173.0" prefHeight="28.0" prefWidth="195.0" promptText="Confirm Password" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Label layoutX="152.0" layoutY="322.0" text="Sign In Account" />
+                        <TextField fx:id="signup_answer" layoutX="100.0" layoutY="246.0" prefHeight="28.0" prefWidth="197.0" promptText="Answer" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="signup_email" layoutX="98.0" layoutY="60.0" prefHeight="28.0" prefWidth="197.0" promptText="Email Address" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </TextField>
+                        <JFXComboBox fx:id="signup_selectQuestion" focusColor="#785142" layoutX="99.0" layoutY="208.0" prefHeight="27.0" prefWidth="199.0" styleClass="combobox" stylesheets="@Style.css" />
+                        <JFXButton fx:id="signup_btn" layoutX="95.0" layoutY="281.0" onAction="#register" prefHeight="39.0" prefWidth="205.0" styleClass="login-btn" stylesheets="@Style.css" text="SIGNUP">
+                           <font>
+                              <Font name="EngraversGothic BT" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="signup_loginAccount" layoutX="131.0" layoutY="339.0" onAction="#switchForm" prefHeight="35.0" prefWidth="125.0" styleClass="login-btn" stylesheets="@Style.css" text="Login IN" />
+                     </children>
+                  </AnchorPane>
+               </right>
+            </BorderPane>
+            <BorderPane fx:id="forgot_form" layoutX="7.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="801.0" visible="false">
+               <left>
+                  <AnchorPane prefHeight="378.0" prefWidth="275.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="404.0" fitWidth="403.0" layoutX="16.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="400.0" prefWidth="399.0" style="-fx-background-color: #F8F1DF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="forgot_username" layoutX="100.0" layoutY="116.0" prefHeight="28.0" prefWidth="197.0" promptText="Username" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="125.0" layoutY="384.0" prefHeight="27.0" prefWidth="232.0" text="Copyright © festivone 2023" textAlignment="CENTER" textFill="#b2a9a9">
+                           <font>
+                              <Font name="EngraversGothic BT" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="69.0" layoutY="56.0" prefHeight="37.0" prefWidth="284.0" text="FORGET PASSWORD" textFill="#663707">
+                           <font>
+                              <Font name="EngraversGothic BT" size="28.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="forgot_answer" layoutX="101.0" layoutY="201.0" prefHeight="28.0" prefWidth="197.0" promptText="Answer" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </TextField>
+                        <JFXComboBox fx:id="forgot_selectQuestion" focusColor="#785142" layoutX="100.0" layoutY="161.0" prefHeight="27.0" prefWidth="199.0" styleClass="combobox" stylesheets="@Style.css" />
+                        <JFXButton fx:id="forgot_proceedBtn" layoutX="96.0" layoutY="259.0" onAction="#forgotPassword" prefHeight="39.0" prefWidth="205.0" styleClass="login-btn" stylesheets="@Style.css" text="PROCEED">
+                           <font>
+                              <Font name="EngraversGothic BT" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="forgot_backBtn" layoutX="96.0" layoutY="332.0" onAction="#switchForm" prefHeight="39.0" prefWidth="205.0" styleClass="login-btn" stylesheets="@Style.css" text="BACK">
+                           <font>
+                              <Font name="EngraversGothic BT" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="changePass_form" layoutX="17.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="801.0" visible="false">
+               <left>
+                  <AnchorPane prefHeight="378.0" prefWidth="275.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="410.0" fitWidth="416.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="243.0" prefWidth="378.0" style="-fx-background-color: #F8F1DF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="changePass_backBtn" layoutX="101.0" layoutY="344.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="30.0" prefWidth="199.0" style="-fx-background-color: #785142;" text="BACK" textFill="#fcfbfa" visible="false">
+                           <font>
+                              <Font name="EngraversGothic BT" size="17.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="114.0" layoutY="373.0" prefHeight="27.0" prefWidth="232.0" text="Copyright © festivone 2023" textAlignment="CENTER" textFill="#b2a9a9">
+                           <font>
+                              <Font name="EngraversGothic BT" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="73.0" layoutY="56.0" prefHeight="37.0" prefWidth="284.0" text="FORGET PASSWORD?" textFill="#663707">
+                           <font>
+                              <Font name="EngraversGothic BT" size="28.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="54.0" fitWidth="71.0" layoutX="7.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+                        <PasswordField fx:id="changePass_cPassword" layoutX="107.0" layoutY="188.0" prefHeight="28.0" prefWidth="195.0" promptText="Confirm Password" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <PasswordField fx:id="changePass_password" layoutX="106.0" layoutY="133.0" prefHeight="28.0" prefWidth="195.0" promptText="Password" styleClass="io-textfield" stylesheets="@Style.css">
+                           <font>
+                              <Font name="EngraversGothic BT" size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <JFXButton fx:id="changePass_proceedBtn" layoutX="100.0" layoutY="258.0" onAction="#changePassword" prefHeight="39.0" prefWidth="205.0" styleClass="login-btn" stylesheets="@Style.css" text="PROCEED">
+                           <font>
+                              <Font name="EngraversGothic BT" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,194 @@
+
+.menuItem:hover{
+    -fx-border-color: #660099;
+    -fx-border-width: 0px 0px 3px 0px;
+     -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+
+    transition: -fx-background-color 0.5s ease,
+                -fx-scale-x 0.5s ease,
+                -fx-scale-y 0.5s ease;
+}
+
+.buyTickets:hover{
+    -fx-background-color:  #00ff7f;
+    -fx-border-color: WHITE;
+    -fx-border-width:0px 0px 0px 3px;
+}
+
+.menu:hover{
+       -fx-background-color:transparent;
+    -fx-border-color: WHITE;
+    -fx-border-width:0px 0px 0px 3px;
+}
+.welcome-textfield {
+   -fx-font-size: 22px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.logout:hover{
+     -fx-background-color: #ff4500;
+    -fx-border-color: WHITE;
+    -fx-border-width:0px 0px 0px 3px;
+}
+
+.mainmenu:hover{
+     -fx-background-color:  #00ff7f;
+    -fx-border-color: WHITE;
+    -fx-border-width:0px 0px 0px 3px;
+}
+
+.bg-white{
+    -fx-background-color:#ffff;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,.3),8,0,0,0);
+}
+
+.bg-COLOR{
+    -fx-background-color:#ffff;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,.3),8,0,0,0);
+}
+
+.add-textfield{
+    -fx-backround-color:#753036;
+    -fx-background-width: 0px 5px 0px 0px;
+    -fx-border-color:#1e242e;
+    -fx-border-width:.8px;
+    -fx-border-radius:0px 5px 0px 0px;
+}
+
+.about:hover{ 
+ -fx-font-family:'JetBrains Mono';
+ -fx-font-smoothing-type: lcd;
+ -fx-fill: white;
+ -fx-font-weight:bold;
+ -fx-font-size: 20px;
+}
+
+.textfield{
+   
+    -fx-border-color:linear-gradient(to bottom right,#660099,#753036);
+    -fx-border-width:.8px;
+    -fx-font-size:13px;
+    -fx-font-family:"Tahoma";
+
+}
+
+
+.combobox{
+    -fx-background-color:transparent;
+    -fx-border-color:#000;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+    -fx-border-radius:10px 5px 10px 5px;
+    -fx-border-width:.8px;
+}
+
+
+.combobox:focused{
+    -fx-border-color:linear-gradient(to bottom right, #753036, #660099);
+    -fx-border-width:1.8px;
+}
+
+
+.date{
+    -fx-background-color:transparent;
+    -fx-border-color:#000;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+    -fx-border-width:.8px;
+}
+.date:focused{
+    -fx-border-color:linear-gradient(to bottom right, #753036, #660099);
+    -fx-border-width:1.8px;
+}
+
+.io-textfield{
+    -fx-background-color:#fff;
+    -fx-background-radius:5px;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+}
+
+
+.card1{
+    -fx-background-color:linear-gradient(to right,#F8F1DF,#785142);
+    -fx-background-radius:8px;
+}
+
+.card2{
+    -fx-background-color:linear-gradient(to bottom,#F8F1DF,#785142);
+    -fx-background-radius:8px;
+}
+
+.select-btn{
+    -fx-background-color:#3e89bb;
+    -fx-background-radius:10px 5px 10px 5px;
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-text-fill: #fff;
+}
+.select-btn:hover{
+    -fx-background-color:#399ad6;
+}
+
+.login-btn{
+    -fx-background-color: #785142;
+    -fx-background-radius:10px 5px 10px 5px;
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-text-fill: #fff;
+}
+.login-btn:hover{
+    -fx-background-color: #9d61b5;
+}
+
+.reset-btn{
+    -fx-background-color:#774689;
+    -fx-background-radius:8px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+}
+.reset-btn:hover{
+    -fx-background-color:#9d61b5;
+}
+
+.search{
+    -fx-background-color:transparent;
+    -fx-border-color:#000;
+    -fx-font-family:"Tahoma";
+    -fx-font-size:13px;
+    -fx-border-radius:10px 5px 10px 5px;
+    -fx-border-width:.8px;
+    -fx-padding:0px 0px 0px 28px;
+}
+.search:focused{
+    -fx-border-color:linear-gradient(to bottom right, #753036, #3c8256);
+    -fx-border-width:1.8px;
+}
+
+.label-info{
+    -fx-border-color:linear-gradient(to bottom right, #F8F1DF,#785142);
+    -fx-border-radius:15px 5px 15px 5px;
+    -fx-font-size:14px;
+    -fx-font-family:"Tahoma";
+    -fx-border-width:2px;
+    -fx-padding:0px 0px 0px 10px;
+}
+
+.receipt-btn{
+    -fx-background-color:#a7753f;
+    -fx-background-radius:10px 5px 10px 5px;
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-text-fill: #fff;
+}
+.receipt-btn:hover{
+    -fx-background-color:#bf7f3a;
+}

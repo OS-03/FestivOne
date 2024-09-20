@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="630.0" prefWidth="1000.0" style="-fx-background-color: #F8F1DF;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="festivone.AfterloginController">
+   <children>
+      <BorderPane fx:id="mainpage" layoutX="-1.0" layoutY="2.0" minWidth="-Infinity" prefHeight="653.0" prefWidth="1070.0" styleClass="card2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane minWidth="-Infinity" prefHeight="57.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <Pane layoutX="3.0" layoutY="1.0" prefHeight="57.0" prefWidth="1073.0" styleClass="card1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <FontAwesomeIcon glyphName="SEARCH" layoutX="103.0" layoutY="37.0" size="2.2em" text="  " wrappingWidth="52.48455047607422" />
+                        <TextField layoutX="174.0" layoutY="8.0" prefHeight="39.0" prefWidth="221.0" styleClass="search" />
+                        <FontAwesomeIcon glyphName="BARS" layoutX="16.0" layoutY="44.0" size="3.5em" styleClass="select-btn" text="" wrappingWidth="54.50961780548096">
+                           <font>
+                              <Font name="Helvetica Neue" size="13.0" />
+                           </font>
+                        </FontAwesomeIcon>
+                        <HBox layoutX="-1.0" minWidth="-Infinity" prefHeight="57.0" prefWidth="847.0" />
+                        <Label fx:id="Menu" layoutX="12.0" layoutY="8.0" onMouseClicked="#handleButtonAction" prefHeight="36.0" prefWidth="39.0">
+                           <font>
+                              <Font name="Hiragino Sans W4" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="MenuClose" layoutX="12.0" layoutY="8.0" onMouseClicked="#handleButtonAction" prefHeight="38.0" prefWidth="40.0" styleClass="menu" stylesheets="@Style.css" />
+                        <JFXButton fx:id="logout" buttonType="RAISED" layoutX="894.0" layoutY="3.0" onAction="#handleButtonAction1" prefHeight="49.0" prefWidth="148.0" styleClass="logout" stylesheets="@Style.css" text="LOGOUT">
+                           <font>
+                              <Font name="Verdana" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="592.0" prefWidth="194.0" styleClass="card2" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutY="22.0" prefHeight="573.0" prefWidth="192.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="22.0">
+                     <children>
+                        <JFXButton fx:id="trackorders" onAction="#changeForm" prefHeight="90.0" prefWidth="225.0" styleClass="menuItem" stylesheets="@Style.css" text="TRACK ORDER" />
+                        <JFXButton fx:id="info" onAction="#changeForm" prefHeight="79.0" prefWidth="315.0" styleClass="menuItem" stylesheets="@Style.css" text="INFO PAGE" />
+                        <JFXButton fx:id="support" onAction="#changeForm" prefHeight="97.0" prefWidth="404.0" styleClass="menuItem" stylesheets="@Style.css" text="CUSTOMER SUPPORT" />
+                        <JFXButton fx:id="feedback" onAction="#changeForm" prefHeight="80.0" prefWidth="351.0" styleClass="menuItem" stylesheets="@Style.css" text="FEEDBACK" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane minWidth="-Infinity" prefHeight="595.0" prefWidth="825.0" styleClass="card2" BorderPane.alignment="CENTER">
+               <children>
+                  <DialogPane layoutX="654.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="196.0">
+                     <expandableContent>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                     </expandableContent>
+                     <content>
+                        <ImageView fitHeight="293.0" fitWidth="196.0" mouseTransparent="true">
+                           <image>
+                              <Image url="@6.jpg" />
+                           </image>
+                        </ImageView>
+                     </content>
+                     <header>
+                        <JFXButton fx:id="buytickets4" buttonType="RAISED" onAction="#changeForm" prefHeight="80.0" prefWidth="190.0" styleClass="buyTickets" stylesheets="@Style.css" text="BUY TICKETS">
+                           <font>
+                              <Font name="Verdana" size="15.0" />
+                           </font></JFXButton>
+                     </header>
+                  </DialogPane>
+                  <DialogPane layoutX="438.0" layoutY="73.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="197.0">
+                     <expandableContent>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                     </expandableContent>
+                     <content>
+                        <ImageView fitHeight="289.0" fitWidth="197.0">
+                           <image>
+                              <Image url="@7.jpg" />
+                           </image>
+                        </ImageView>
+                     </content>
+                     <header>
+                        <JFXButton fx:id="buytickets3" buttonType="RAISED" onAction="#changeForm" prefHeight="80.0" prefWidth="190.0" styleClass="buyTickets" stylesheets="@Style.css" text="BUY TICKETS">
+                           <font>
+                              <Font name="Verdana" size="15.0" />
+                           </font></JFXButton>
+                     </header>
+                  </DialogPane>
+                  <DialogPane layoutX="10.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="190.0">
+                     <expandableContent>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                     </expandableContent>
+                     <content>
+                        <ImageView fitHeight="289.0" fitWidth="191.0" mouseTransparent="true">
+                           <image>
+                              <Image url="@5.jpg" />
+                           </image>
+                        </ImageView>
+                     </content>
+                     <header>
+                        <JFXButton fx:id="buytickets1" buttonType="RAISED" onAction="#changeForm" prefHeight="81.0" prefWidth="190.0" styleClass="buyTickets" stylesheets="@Style.css" text="BUY TICKETS">
+                           <font>
+                              <Font name="Verdana" size="15.0" />
+                           </font></JFXButton>
+                     </header>
+                  </DialogPane>
+                  <DialogPane layoutX="226.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="193.0">
+                     <expandableContent>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                     </expandableContent>
+                     <content>
+                        <ImageView fitHeight="290.0" fitWidth="201.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@4.jpg" />
+                           </image>
+                        </ImageView>
+                     </content>
+                     <header>
+                        <JFXButton fx:id="buytickets2" buttonType="RAISED" onAction="#changeForm" prefHeight="80.0" prefWidth="190.0" styleClass="buyTickets" stylesheets="@Style.css" text="BUY TICKETS">
+                           <font>
+                              <Font name="Verdana" size="15.0" />
+                           </font></JFXButton>
+                     </header>
+                  </DialogPane>
+                  <Text fill="#9a8b8b" layoutX="237.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&amp; MANY MORE EVENTS COMMING SOON!" wrappingWidth="540.9498596191406">
+                     <font>
+                        <Font name="Monaco" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="page1" prefHeight="655.0" prefWidth="1070.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="11.0" layoutY="22.0" prefHeight="532.0" prefWidth="346.0" styleClass="card2" stylesheets="@Style.css" />
+                  <DialogPane fx:id="D4" layoutX="45.0" layoutY="96.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="282.0">
+                     <expandableContent>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                     </expandableContent>
+                     <content>
+                        <ImageView fitHeight="391.0" fitWidth="282.0" mouseTransparent="true">
+                           <image>
+                              <Image url="@6.jpg" />
+                           </image>
+                        </ImageView>
+                     </content>
+                  </DialogPane>
+                  <DialogPane fx:id="D2" layoutX="79.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="194.0">
+                     <expandableContent>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                     </expandableContent>
+                     <content>
+                        <ImageView fitHeight="420.0" fitWidth="243.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@4.jpg" />
+                           </image>
+                        </ImageView>
+                     </content>
+                  </DialogPane>
+                  <DialogPane fx:id="D1" layoutX="47.0" layoutY="103.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="248.0">
+                     <expandableContent>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                     </expandableContent>
+                     <content>
+                        <ImageView fitHeight="324.0" fitWidth="247.0" mouseTransparent="true">
+                           <image>
+                              <Image url="@5.jpg" />
+                           </image>
+                        </ImageView>
+                     </content>
+                  </DialogPane>
+                  <DialogPane fx:id="D3" layoutX="53.0" layoutY="104.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="276.0">
+                     <expandableContent>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                     </expandableContent>
+                     <content>
+                        <ImageView fitHeight="391.0" fitWidth="278.0">
+                           <image>
+                              <Image url="@7.jpg" />
+                           </image>
+                        </ImageView>
+                     </content>
+                  </DialogPane>
+                  <Pane layoutX="373.0" layoutY="17.0" prefHeight="540.0" prefWidth="693.0" styleClass="card1" stylesheets="@Style.css">
+                     <children>
+                        <Text layoutX="78.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME:" wrappingWidth="84.6776123046875" />
+                        <Text layoutX="76.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME:" />
+                        <Text layoutX="356.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENDER:" />
+                        <Text layoutX="77.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NO #:" />
+                        <Text layoutX="93.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE:" />
+                        <TextField fx:id="bookingTicket_firstName" layoutX="192.0" layoutY="91.0" prefHeight="29.0" prefWidth="105.0" styleClass="io-textfield" />
+                        <TextField fx:id="bookingTicket_lastName" layoutX="191.0" layoutY="158.0" prefHeight="29.0" prefWidth="105.0" styleClass="io-textfield" />
+                        <ComboBox fx:id="bookingTicket_gender" layoutX="457.0" layoutY="92.0" onAction="#genderList" prefWidth="150.0" styleClass="combobox" />
+                        <JFXButton fx:id="bookingTicket_selectBtn" layoutX="177.0" layoutY="439.0" onAction="#bookingTicketSelect" onMouseClicked="#changeForm" prefHeight="65.0" prefWidth="144.0" styleClass="select-btn" text="Submit" />
+                        <JFXButton layoutX="403.0" layoutY="436.0" onAction="#bookingTicketReset" prefHeight="65.0" prefWidth="144.0" styleClass="reset-btn" text="Reset" />
+                        <Text layoutX="100.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="welcome-textfield" text="PLEASE FILL THE DETAILS TO PROCEED" wrappingWidth="513.5318603515625">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                        </Text>
+                        <DatePicker fx:id="bookingTicket_date" layoutX="184.0" layoutY="293.0" prefHeight="26.0" prefWidth="128.0" promptText="DD_MM_YYYY" styleClass="io-textfield" />
+                        <TextField fx:id="bookingTicket_phoneNum" layoutX="189.0" layoutY="228.0" prefHeight="29.0" prefWidth="110.0" styleClass="io-textfield" />
+                        <ComboBox fx:id="bookingTicket_location" layoutX="300.0" layoutY="355.0" onAction="#LocationList" prefWidth="150.0" styleClass="combobox" />
+                        <ComboBox fx:id="bookingTicket_type" layoutX="456.0" layoutY="294.0" onAction="#typeList" prefWidth="150.0" styleClass="combobox" />
+                        <ComboBox fx:id="bookingTicket_ticketNum" layoutX="456.0" layoutY="230.0" onAction="#ticketNumList" prefWidth="150.0" styleClass="combobox" />
+                        <ComboBox fx:id="bookingTicket_EventId" layoutX="456.0" layoutY="158.0" onAction="#EventIdList" prefWidth="150.0" styleClass="combobox" />
+                        <Text layoutX="356.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event ID:" />
+                        <Text layoutX="360.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TICKET:" />
+                        <Text layoutX="364.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE:" />
+                        <Text layoutX="194.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOCATION:" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <JFXButton fx:id="mainmenu" onAction="#changeForm" prefHeight="77.0" prefWidth="160.0" styleClass="mainmenu" stylesheets="@Style.css" text="MAINMENU" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </bottom>
+      </BorderPane>
+      <BorderPane fx:id="page2" prefHeight="658.0" prefWidth="1070.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="555.0" prefWidth="1035.0" stylesheets="@dashboardDesign.css" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="customers_tableView" layoutX="77.0" layoutY="94.0" onMouseClicked="#customersShowDataList" prefHeight="454.0" prefWidth="852.0" stylesheets="@Style.css">
+                     <columns>
+                        <TableColumn fx:id="customers_customerNum" prefWidth="70.0" text="Customer #" />
+                        <TableColumn fx:id="customers_ticketNum" prefWidth="71.0" text="seat #" />
+                        <TableColumn fx:id="customers_firstName" prefWidth="84.0" text="First Name" />
+                        <TableColumn fx:id="customers_lastName" prefWidth="75.0" text="Last Name" />
+                        <TableColumn fx:id="customers_gender" prefWidth="75.0" text="Gender" />
+                        <TableColumn fx:id="customers_phoneNum" prefWidth="108.0" text="Phone #" />
+                        <TableColumn fx:id="customers_EventID" prefWidth="71.0" text="Event ID" />
+                        <TableColumn fx:id="customers_location" prefWidth="106.0" text="Location" />
+                        <TableColumn fx:id="customers_type" prefWidth="99.0" text="Type" />
+                        <TableColumn fx:id="customers_date" prefWidth="91.0" text="Date" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="customers_search" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="291.0" promptText="Search" styleClass="search" stylesheets="@dashboardDesign.css" />
+                  <FontAwesomeIcon glyphName="SEARCH" layoutX="21.0" layoutY="35.0" size="1.5em" />
+                  <JFXButton fx:id="mainmenu1" layoutX="925.0" layoutY="6.0" onAction="#changeForm" prefHeight="71.0" prefWidth="103.0" stylesheets="@Style.css" text="MAINMENU">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="mainmenu" />
+                        <String fx:value="select-btn" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+               <styleClass>
+                  <String fx:value="card1" />
+                  <String fx:value="card1" />
+               </styleClass>
+            </AnchorPane>
+         </center></BorderPane>
+      <BorderPane fx:id="page3" layoutX="-7.0" layoutY="-3.0" prefHeight="664.0" prefWidth="1076.0" styleClass="card2" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <JFXButton fx:id="mainmenu2" onAction="#changeForm" prefHeight="77.0" prefWidth="160.0" styleClass="mainmenu" stylesheets="@Style.css" text="MAINMENU" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </bottom>
+         <center>
+            <Label prefHeight="438.0" prefWidth="957.0" styleClass="about" stylesheets="@Style.css" text="Welcome to FestivOne,&#10;FestivOne, is a professional platform where we provide  Festive Event Tickets for your Personalized Booking at a Nominal Rate . &#10;We hope you like all the contents provided by us.&#10;&#10;If you have additional questions or require more information about our website, &#10;do not hesitate to Contact through email at xyz@festivone&#10;&#10;About FestivOne&#10;FestivOne This App founded in 2023 by 4 Colleague.&#10; Also, FestivOne commits to reply to all people who subscribe to the News letter and Follow the our website. &#10;We hope you enjoy Our services as much as we enjoy offering them to you.&#10;Sincerely,FestivOne&#10;&#10;Aim of FestivOne&#10;Like any other website, FestivOne We want viewers to enhance their skills with the help of our contents. &#10;We will continue to provide helpful content to you like this.&#10;&#10;Our About-us page was created with the help of the About Us Generator Tool&#10;We are a leading online learning platform, guiding viewers to identify their needful Events.&#10;We are working to turn our passion of FestivOne into a growing online website. &#10;If you have any question or query regarding our website, &#10;Please don't hesitate to contact us.&#10;Thanks For Visiting Our App!" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+         </center>
+         <top>
+            <Label prefHeight="118.0" prefWidth="259.0" styleClass="welcome-textfield" stylesheets="@Style.css" text="ABOUT US:-" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Verdana Bold Italic" size="37.0" />
+               </font>
+            </Label>
+         </top></BorderPane>
+      <BorderPane fx:id="page4" layoutX="10.0" layoutY="10.0" prefHeight="658.0" prefWidth="1070.0" styleClass="card2" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <JFXButton fx:id="mainmenu3" onAction="#changeForm" prefHeight="77.0" prefWidth="160.0" styleClass="mainmenu" stylesheets="@Style.css" text="MAINMENU" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </bottom>
+         <center>
+            <Text fill="#e8dede" strokeType="OUTSIDE" strokeWidth="0.0" text="&amp; PAGE UNDERCONSTRUCTION COMMING SOON!" wrappingWidth="540.9498596191406" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Monaco" size="24.0" />
+               </font>
+            </Text>
+         </center></BorderPane>
+      <BorderPane fx:id="page5" layoutX="10.0" layoutY="10.0" prefHeight="658.0" prefWidth="1070.0" styleClass="card2" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <JFXButton fx:id="mainmenu4" buttonType="RAISED" onAction="#changeForm" prefHeight="65.0" prefWidth="145.0" styleClass="mainmenu" stylesheets="@Style.css" text="MAINMENU" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </bottom>
+         <center>
+            <Text fill="#e8dede" strokeType="OUTSIDE" strokeWidth="0.0" text="&amp; PAGE UNDERCONSTRUCTION COMMING SOON!" wrappingWidth="540.9498596191406" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Monaco" size="24.0" />
+               </font>
+            </Text>
+         </center></BorderPane>
+      <BorderPane fx:id="payment_gateway" prefHeight="634.0" prefWidth="1072.0" visible="false">
+         <center>
+            <Pane prefHeight="635.0" prefWidth="1072.0" styleClass="card1" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="258.0" layoutY="18.0" prefHeight="75.0" prefWidth="511.0" text="SELECTED CUSTOMER INFORMATION">
+                     <font>
+                        <Font name="Verdana Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="155.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="108.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NUMBER:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="143.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENDER:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="138.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="134.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME:" wrappingWidth="118.1617431640625">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="579.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EVENT ID :">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="573.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOCATION:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="588.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE:" wrappingWidth="62.626220703125">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="576.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TICKET #:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="bookingTicket_sci_firstName" layoutX="294.0" layoutY="123.0" prefHeight="50.0" prefWidth="170.0" styleClass="label-info" stylesheets="@Style.css" text="DETAILS" textFill="#575757">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bookingTicket_sci_EventID" layoutX="706.0" layoutY="126.0" prefHeight="50.0" prefWidth="170.0" styleClass="label-info" stylesheets="@Style.css" text="DETAILS" textFill="#575757" />
+                  <Label fx:id="bookingTicket_sci_location" layoutX="704.0" layoutY="201.0" prefHeight="50.0" prefWidth="170.0" styleClass="label-info" stylesheets="@Style.css" text="DETAILS" textFill="#575757" />
+                  <Label fx:id="bookingTicket_sci_type" layoutX="703.0" layoutY="287.0" prefHeight="50.0" prefWidth="170.0" styleClass="label-info" stylesheets="@Style.css" text="DETAILS" textFill="#575757" />
+                  <Label fx:id="bookingTicket_sci_ticketNum" layoutX="703.0" layoutY="365.0" prefHeight="50.0" prefWidth="170.0" styleClass="label-info" stylesheets="@Style.css" text="DETAILS" textFill="#575757" />
+                  <Label fx:id="bookingTicket_sci_lastName" layoutX="295.0" layoutY="206.0" prefHeight="50.0" prefWidth="170.0" styleClass="label-info" stylesheets="@Style.css" text="DETAILS" textFill="#575757" />
+                  <Label fx:id="bookingTicket_sci_gender" layoutX="293.0" layoutY="287.0" prefHeight="50.0" prefWidth="170.0" styleClass="label-info" stylesheets="@Style.css" text="DETAILS" textFill="#575757" />
+                  <Label fx:id="bookingTicket_sci_phoneNum" layoutX="293.0" layoutY="363.0" prefHeight="50.0" prefWidth="170.0" styleClass="label-info" stylesheets="@Style.css" text="DETAILS" textFill="#575757" />
+                  <Label fx:id="bookingTicket_sci_date" layoutX="293.0" layoutY="439.0" prefHeight="50.0" prefWidth="170.0" styleClass="label-info" stylesheets="@Style.css" text="DETAILS" textFill="#575757" />
+                  <JFXButton fx:id="bookingTicket_sci_pay" layoutX="568.0" layoutY="502.0" onAction="#bookingTicketPay" prefHeight="78.0" prefWidth="165.0" styleClass="select-btn" text="PAY" />
+                  <Label fx:id="bookingTicket_sci_total" layoutX="379.0" layoutY="511.0" prefHeight="60.0" prefWidth="94.0" text="\$0.0">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="214.0" layoutY="513.0" prefHeight="57.0" prefWidth="92.0" text="TOTAL:">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="bookingTicket_sci_receipt" layoutX="465.0" layoutY="255.0" prefHeight="37.0" prefWidth="86.0" styleClass="receipt-btn" stylesheets="@Style.css" text="RECIEPT" visible="false" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
