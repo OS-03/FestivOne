@@ -1,4 +1,4 @@
-<h2>FestivOne✨🌟</h2>
+<h2>FestivOne✨</h2>
 <ul>
 <li>FestiveOne is a desktop-based event management application that streamlines event planning and coordination for both customers and event organizers. </li>
 <li>Primary objective for this project was to develop a user-friendly platform that enables customers to book event tickets with ease. To accomplish this, we utilized JavaFX for graphical user interface components and Scene Builder for FXML layout design. </li>
